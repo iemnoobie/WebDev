@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Center Alignment and GIF Toggle</title>
+  <style>
+    body {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #content {
+      display: none;
+    }
+    #myImage {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>HI BUBU</h2>
+
+  <p>.</p>
+  <p>.</p>
+
+ 
+
+  <div id="content">
+    <img id="myImage" src="flowers-bouquet.gif" alt="Flowers Bouquet">
+    <p>For you, I miss you so much sorry</p>
+  </div>
+
+  <script>
+    function showContent() {
+      document.getElementById('content').style.display = 'block';
+    }
+  </script>
+
+    <button onclick="showContent()">CLICK ME</button>
+</body>
+</html>
